@@ -1,0 +1,585 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+    header{
+            
+        border-bottom: 0;
+    }
+    .logo{
+            width:140px;
+     }
+    .menu-icon{
+        display:block;
+        background: lightgray;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .menu{
+        position: fixed;
+        background: white;
+        box-shadow: 0 0 10px 2px #ccc;
+        top:0;
+        left:-100%;
+        width:80%;
+        height:100%;
+        z-index: 9;
+        padding: 15px;
+        transition: 0.5s;
+        overflow: auto;
+    }
+    .menu>ul{
+        display: block;
+        margin-top:10px;
+    }
+    .menu>ul>li{
+        margin-top:20px;
+    }
+    .mobilelogo{
+        display: block;
+        width:130px;
+        padding: 10px 0;
+    }
+    .dropitem{
+        display: none;
+    }
+    .mobdropitem{
+        display: block;
+    }
+
+    .mobdropitem .items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobmegamenu{
+        display: none;
+        border:1px solid #5c1c4b;
+        font-size: 14px;
+        margin-top: 15px;
+        border-radius: 10px;
+        padding: 10px;
+        color:black;
+        width:100%;
+        
+    }
+    .mobmegamenu>h2{
+        font-size: 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .all-country-list{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mobmegamenu ul{
+        margin-top: 10px;
+        ist-style: none;
+    }
+    .mobmegamenu ul li{
+        line-height: 25px;
+    }      
+    .closeIcon{
+        background: crimson;
+        color:white;
+        font-weight: 600;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .active{
+        display: block;
+    }
+
+
+    .hero-section-inner{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .cover-photo1{
+        flex-basis: 100%;
+        height:50vh;
+    }
+    .mid-box{
+       width:100%;
+    }
+    .mid-box>h1{
+        font-size: 20px;
+        width:100%;
+
+        margin: 0;
+    }
+    .mid-box input[type="text"]{
+        width:80%;
+    }
+    .mid-box span{
+        padding: 12px 12px;
+        position: relative;
+        top:0px;
+        left:1px;
+    }
+    .searchbox{
+        width:100%;
+       
+        display: flex;
+        justify-content: center;
+    }
+    .cover-photo2{
+        flex-basis: 100%;
+        height:60vh;
+        margin-top: 20px;
+    }
+    .travel-boxes-inner{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .travel-box{
+        margin-top: 15px;
+    }
+    .travel-logo{
+        flex-basis: 20%;
+    }
+    .places-gallery{
+        flex-wrap: wrap;
+    }
+    .trading-section-inner{
+        padding: 10px;
+    }
+    .trading-section-inner>h2{
+        font-size: 23px;
+        width:100%;
+    }
+    .leftplaces-gallery{
+       flex-basis: 100%;
+       height:60vh;
+       background-position: top;
+    }
+    .rightplaces-gallery{
+        flex-basis: 100%;
+    }
+    .gallery-1{
+       flex-wrap: wrap;
+       padding: 0 10px 10px 10px;
+    }
+    .gallery-1 .firstplace-img:nth-child(1),.gallery-1 .firstplace-img:nth-child(2),.gallery-1 .firstplace-img:nth-child(3),.gallery-1 .secondplace-img:nth-child(1),.gallery-1 .secondplace-img:nth-child(2),.gallery-1 .secondplace-img:nth-child(3){
+        flex-basis: 100%;
+        height: 30vh;
+        margin-top: 10px;
+    }
+    .trading-international-inner{
+       padding: 10px;
+    }
+    .trading-international-inner>h2{
+        font-size: 25px;
+        width:100% 
+    }
+    .interphotos{
+        flex-wrap: wrap;
+    }
+    .interplaces1:nth-child(1),.interplaces1:nth-child(2),.interplaces1:nth-child(3),.interplaces2:nth-child(1),.interplaces2:nth-child(2),.interplaces2:nth-child(3){
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    .toppics-section-inner h2{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .viewBtn{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .cards-details{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .cardlist{
+        margin-top: 20px;
+    }
+    .best-seller-section-inner{
+        padding: 10px;
+    }
+    .best-seller-section-inner>h2{
+        padding-left: 15px;
+        font-size: 25px;
+    }
+    .owl-prev span,
+    .owl-next span{
+
+        width:35px;
+        height:35px;
+    }
+    .owl-prev{
+        left: -6px;
+            
+    }
+    .owl-next {
+        right: -6px;
+    }
+    .famous-spots{
+        margin-top: 100px;
+     }
+    .famous-spots h4{
+        font-size: 20px;
+    }
+    .reviews-section-inner span{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .review-img{
+        width:110px;
+    }
+    .blog-section-inner{
+        padding: 10px;
+
+    }
+    .blog-section-inner>h3{
+        margin-top: 15px;
+    }
+    .blog-card{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .blogs{
+        margin-top: 15px;
+    }
+    .news-letter-box{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .inputsubscribe{
+        width:100%
+    }
+    .subscribeBtn{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .faq-section-inner{
+        padding-left:10px;
+        padding-right: 10px;
+    
+     }
+     .faq-box h3{
+        font-size: 14px;
+     }
+    .footer-list-section{
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    .footer-section-panel{
+        margin-bottom: 15px;
+    }
+    .color-faq{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .reply{
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .footer-heading{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .iconimg{
+            margin-left: 4px;
+            width:25px;
+            height:25px;
+    }
+    /*---------------------------------luxury Rajasthan -------------------------*/
+    .search-box{
+        display: none;
+    }
+    .container-left{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    .container-left>h1{
+        font-size: 30px;
+    }
+    .rajasthan-img>img{
+        height:70vh
+    }
+    .overviewbtn:nth-child(3){
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .container-right{
+        display: none;
+    }
+    .enquirenow{
+        display:initial;
+    }
+    .enquirenow-inner{
+        opacity: 1;
+    }
+    /*----------------- Contact us --------------------------*/
+    .cinfo-box{
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .cinfo-box-left>h2{
+        font-size: 30px;
+    }
+    .mobile-section{
+        flex-direction: column;
+    }
+    .mobileinput{
+        margin-top: 10px;
+    }
+    /*----------------------India-tour-package-----------------*/
+    .tour-package-inner{
+        padding: 10px;
+    }
+    .tour-package-inner>h2{
+        font-size: 20px;
+    }
+    .tour-package-inner>p:nth-child(3){
+        font-size: 12px;
+    }
+    .tour-cards{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .tour-card{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:991px){
+    header{
+            
+        border-bottom: 0;
+    }
+    .menu-icon{
+        display:block;
+        background: lightgray;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .menu{
+        position: fixed;
+        background: white;
+        box-shadow: 0 0 10px 2px #ccc;
+        top:0;
+        left:-100%;
+        width:80%;
+        height:100%;
+        z-index: 9;
+        padding: 15px;
+        transition: 0.5s;
+        overflow: auto;
+
+    }
+    .menu>ul{
+        display: block;
+        margin-top:10px;
+    }
+    .menu>ul>li{
+        margin-top:20px;
+    }
+    .mobilelogo{
+        display: block;
+        width:130px;
+        padding: 10px 0;
+    }
+    .dropitem{
+        display: none;
+    }
+    .mobdropitem{
+        display: block;
+    }
+
+    .mobdropitem .items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobmegamenu{
+        display: none;
+        border:1px solid #5c1c4b;
+        font-size: 14px;
+        margin-top: 15px;
+        border-radius: 10px;
+        padding: 10px;
+        color:black;
+        width:100%;
+        
+    }
+    .mobmegamenu>h2{
+        font-size: 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .all-country-list{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mobmegamenu ul{
+        margin-top: 10px;
+        ist-style: none;
+    }
+    .mobmegamenu ul li{
+        line-height: 25px;
+    }      
+    .closeIcon{
+        background: crimson;
+        color:white;
+        font-weight: 600;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .active{
+        display: block;
+    }
+
+    .hero-section-inner{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .cover-photo1{
+        flex-basis: 100%;
+        height:50vh;
+    }
+    .mid-box{
+       width:100%;
+    }
+    .mid-box>h1{
+        font-size: 20px;
+        width:100%;
+
+        margin: 0;
+    }
+    .mid-box input[type="text"]{
+        width:80%;
+    }
+    .mid-box span{
+        padding: 12px 12px;
+        position: relative;
+        top:0px;
+        left:0px;
+    }
+    .searchbox{
+        width:100%;
+       
+        display: flex;
+        justify-content: center;
+    }
+    .cover-photo2{
+        flex-basis: 100%;
+        height:60vh;
+        margin-top: 20px;
+    }
+    .travel-boxes-inner{
+        padding: 10px;
+    }
+    .travel-logo{
+        flex-basis: 20%;
+    }
+    .trading-section-inner{
+         padding: 40px 10px;
+    }
+    .trading-section-inner>h2{
+        font-size: 34px;
+           
+    }
+    .places-gallery{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .leftplaces-gallery, .rightplaces-gallery {
+   
+        flex-basis: 100%;
+        height:50vh;
+    }
+    .leftplaces-gallery {
+         background-position: top center;
+     }
+    .gallery-1 .firstplace-img:nth-child(1){
+            
+            flex-basis: 33%;
+            
+    }
+    .gallery-1 .firstplace-img:nth-child(2){
+           
+            flex-basis: 33%;
+            
+    }
+    .gallery-1 .firstplace-img:nth-child(3){
+            
+            flex-basis: 33%;
+           
+    }
+    .gallery-1 .secondplace-img:nth-child(1){
+           
+            flex-basis: 33%;
+            
+    }
+    .gallery-1 .secondplace-img:nth-child(2){
+            
+            flex-basis: 33%;
+            
+    }
+    .gallery-1 .secondplace-img:nth-child(3){
+            
+            flex-basis: 33%;
+            
+    }
+    .trading-international{
+            width:100%;
+            margin-top: 80px;
+    }
+    .trading-international-inner{
+           
+            padding: 30px 10px;
+    }
+
+    .toppics-section-inner{
+            padding: 30px 10px;
+     }
+    .cardlist{
+            flex-basis: 48%;
+    }
+    .cards-details{
+            
+            flex-wrap: wrap;
+            gap:20px
+    }
+    .best-seller-section-inner{
+        padding: 30px 10px
+    }
+    .owl-prev{
+        left: -11px;
+        top: 25%;
+            
+    }
+    .owl-next {
+        right: -11px;
+        top: 25%;
+    }
+    .blog-section-inner{
+        
+        padding: 50px 10px;
+    }
+    .blog-card{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .blogs{
+        flex-basis: 100%;
+    }
+    .faq-section-inner{
+        padding-left:10px;
+        padding-right: 10px;
+    
+    }
+    .footer-section-inner{
+           
+        padding: 50px 10px;
+    }
+    .footer-section-panel>h2{
+            
+        font-size: 18px;
+    }
+    .footer-section-panel>ul>li{
+        font-size:14px;
+    }
+    .footer-heading{
+        padding: 0 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }

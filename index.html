@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gobooktours</title>
+	 <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	 <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" type="text/css" href="css/media.css">
+	
+</head>
+<body>
+    <div class="loader">
+        <img src="images/loading.gif" width="250" alt="">
+    </div>
+	<header>
+		<nav>
+			<div class="logo">
+	             <img src="images/gobooktours-logo.png" />
+	        </div>
+	        <div class="menu-icon">
+	             <i class="fa-solid fa-bars" id="menu-bar"></i>
+	        </div>
+	        <!-- <div class="search-box">
+	             <input type="text" class="textSearch" placeholder="Search your favourite destinations or tours" />
+	             <span><i class="fa-solid fa-magnifying-glass"></i></span>
+	        </div> -->
+	        <div class="menu">
+	        	<div class="mobilelogo">
+                    <img src="images/gobooktours-logo.png" />
+                </div>
+	        	<ul>
+	               <li class="dropitem">Destinations<i class="fa-solid fa-angle-down"></i>
+
+	               		<div class="megamenu">
+                            <h2>All Destinations</h2>
+                            <div class="all-country-list">
+                                    <div class="country-list">
+                                    	<h3>Countries</h3>
+                                        <ul>
+											<li>India Tour Packages</li>
+											<li>Nepal Tour Packages</li>
+											<li>Bhutan Tour Packages</li>
+											<li>Sri Lanka Tour Packages</li>
+                                            <li>Andhra Pradesh Tours</li>
+                                        </ul>
+                                        <h3>East India</h3>
+                                        <ul>
+											<li>Bihar Tour Packages</li>
+											<li>Odisha Tour Packages
+											<li>West Bengal Tour Packages
+										</ul>
+                                    </div>
+                                    <div class="country-list">
+                                       <h3>North India</h3>
+                                       <ul>
+											<li>Delhi Tour Packages</li>
+											<li>Himachal Tour Packages</li>
+											<li>Jammu and Kashmir Tours
+											<li>Ladakh Tour Packages</li>
+											<li>Punjab Tour Packages</li>
+											<li>Rajasthan Tour Packages</li>
+											<li>Uttarakhand Tour Packages</li>
+											<li>Uttar Pradesh Tours</li>
+									   </ul>
+                                    </div>
+                                    <div class="country-list">
+                                        <h3>South India</h3>
+                                        <ul>
+											<li>Andhra Pradesh Tours</li>
+											<li>Andaman & Nicobar Islands</li>
+											<li>Karnataka Tour Packages</li>
+											<li>Kerala Tour Packages</li>
+											<li>Telangana Tour Packages</li>
+											<li>Tamil Nadu Tour Packages</li>
+										</ul>
+										<h3>Central India</h3>
+										<ul>
+											<li>Madhya Pradesh Tours</li>
+										</ul>	
+                                    </div>
+                                    <div class="country-list">
+                                        <h3>Western India</h3>
+                                        <ul>
+											<li>Goa Tour Packages</li>
+											<li>Gujarat Tour Packages</li>
+											<li>Maharashtra Tour Packages</li>
+										</ul>
+										<h3>Northeast India</h3>
+										<ul>
+											<li>Assam Tour Packages</li>
+											<li>Meghalaya Tour Packages</li>
+											<li>Sikkim Tour Packages</li>
+										</ul>
+                                    </div>
+                                </div>
+                        </div>
+	               </li>
+
+	               <li class="dropitem">Travel Themes <i class="fa-solid fa-angle-down"></i>
+	               		<div class="dropdown">
+	               			<div class="leftdropdown">
+		               			<ul>
+		               				<li>Adventure Tours</li>
+									<li>Wildlife Tours</li>
+									<li>In-Depth Cultural Tours</li>
+									<li>Romantic Getaway</li>
+									<li>Beaches Tours</li>
+									<li>Hiking & Trekking Tours</li>
+
+		               			</ul>
+		               		</div>
+		               		<div class="leftdropdown">
+		               			<ul>
+		               				<li>Spiritual Tours</li>
+									<li>Honeymoon Tours</li>
+									<li>Food & Culinary Tours</li>
+									<li>Yoga and Meditation Tours</li>
+									<li>Spa and Ayurveda Tours</li>
+									<li>Fairs and Festivals Tours</li>
+
+		               			</ul>
+		               		</div>
+	               		</div>
+	               </li>
+
+	                <li class="mobdropitem">
+	                	<div class="items">
+                            <span>Destination</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+	               		<div class="mobmegamenu">
+                            <h2>All Destinations</h2>
+                                <div class="all-country-list">
+                                    <div class="country-list">
+                                    	<h3>Countries</h3>
+                                        <ul>
+											<li>India Tour Packages</li>
+											<li>Nepal Tour Packages</li>
+											<li>Bhutan Tour Packages</li>
+											<li>Sri Lanka Tour Packages</li>
+                                            <li>Andhra Pradesh Tours</li>
+                                        </ul>
+                                        <h3>East India</h3>
+                                        <ul>
+											<li>Bihar Tour Packages</li>
+											<li>Odisha Tour Packages
+											<li>West Bengal Tour Packages
+										</ul>
+                                    </div>
+                                    <div class="country-list">
+                                       <h3>North India</h3>
+                                       <ul>
+											<li>Delhi Tour Packages</li>
+											<li>Himachal Tour Packages</li>
+											<li>Jammu and Kashmir Tours
+											<li>Ladakh Tour Packages</li>
+											<li>Punjab Tour Packages</li>
+											<li>Rajasthan Tour Packages</li>
+											<li>Uttarakhand Tour Packages</li>
+											<li>Uttar Pradesh Tours</li>
+									   </ul>
+                                    </div>
+                                    <div class="country-list">
+                                        <h3>South India</h3>
+                                        <ul>
+											<li>Andhra Pradesh Tours</li>
+											<li>Andaman & Nicobar Islands</li>
+											<li>Karnataka Tour Packages</li>
+											<li>Kerala Tour Packages</li>
+											<li>Telangana Tour Packages</li>
+											<li>Tamil Nadu Tour Packages</li>
+										</ul>
+										<h3>Central India</h3>
+										<ul>
+											<li>Madhya Pradesh Tours</li>
+										</ul>	
+                                    </div>
+                                    <div class="country-list">
+                                        <h3>Western India</h3>
+                                        <ul>
+											<li>Goa Tour Packages</li>
+											<li>Gujarat Tour Packages</li>
+											<li>Maharashtra Tour Packages</li>
+										</ul>
+										<h3>Northeast India</h3>
+										<ul>
+											<li>Assam Tour Packages</li>
+											<li>Meghalaya Tour Packages</li>
+											<li>Sikkim Tour Packages</li>
+										</ul>
+                                    </div>
+                                </div>
+                        </div>
+
+	               </li>
+
+	               	<li class="mobdropitem">
+		               	<div class="items">
+			               	 <span>Travel Themes </span>
+			               	 <i class="fa-solid fa-angle-down"></i>
+			            </div>
+	               	    <div class="mobmegamenu">
+	               			<div class="leftdropdown">
+		               			<ul>
+		               				<li>Adventure Tours</li>
+									<li>Wildlife Tours</li>
+									<li>In-Depth Cultural Tours</li>
+									<li>Romantic Getaway</li>
+									<li>Beaches Tours</li>
+									<li>Hiking & Trekking Tours</li>
+
+		               			</ul>
+		               		</div>
+		               		<div class="leftdropdown">
+		               			<ul>
+		               				<li>Spiritual Tours</li>
+									<li>Honeymoon Tours</li>
+									<li>Food & Culinary Tours</li>
+									<li>Yoga and Meditation Tours</li>
+									<li>Spa and Ayurveda Tours</li>
+									<li>Fairs and Festivals Tours</li>
+
+		               			</ul>
+		               		</div>
+	               		</div>
+	               	</li>
+	               <li>Luxury Trips</li>
+	            </ul>
+	        </div>
+	    </nav>
+	</header>
+	<section class="hero-section">
+        <div class="hero-section-inner">
+            <div class="cover-photo1">
+                    <div class="mid-box">
+                        <h1>One Country, Different Cultures</h1>
+                        
+                        <div class="searchbox">
+                            <input type="text" placeholder="Type your favourite destination..." />
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+            </div>
+            <div class="cover-photo2">
+                <div class="overlay">
+                    <div class="tour">
+                        <div class="tour-month">Tour of the Month</div>
+                        <div class="tour-india">India Nepal Bhutan Tour</div>
+                        <div class="experience">Experience 3 Countries in just 15 Days.</div> 
+                    </div>      
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  	<section class="travel-boxes" data-aos="fade-up">
+        <div class="travel-boxes-inner">
+            <div class="travel-box">
+                <div class="travel-logo"><img src="images/sustainable-environment.png" /></div>
+                <div class="travel-desc">
+                   <h3>Sustainable Travel</h3>
+                   <p>At Gobook Tours, we're dedicated to preserving nature and empowering communities through sustainable travel initiatives.</p>
+                </div>
+            </div>
+            <div class="travel-box">
+                <div class="travel-logo"><img src="images/peace-of-mind.png" /></div>
+                <div class="travel-desc">
+                   <h3>Peace of Mind</h3>
+                   <p>Round-the-clock local assistance over Phone, WhatsApp, Email to address any travel needs or emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trading-section" data-aos="fade-up">
+        <div class="trading-section-inner">
+            <h2>Top Trending India Holiday Destinations</h2>
+            <div class="places-gallery">
+                <div class="leftplaces-gallery">
+                    <div class="overlay">
+                        <div class="overlay">
+                            <div class="place-name">
+                                <p>Rajasthan</p>
+                                <p>View Packages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightplaces-gallery">
+                    <div class="gallery-1">
+                        <div class="firstplace-img">
+                            <div class="overlay">
+                                <div class="place-name">
+                                    <p>Kerala</p>
+                                    <p>View Packages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="firstplace-img">
+                            <div class="overlay">
+                                <div class="place-name">
+                                    <p>Sikkim</p>
+                                    <p>View Packages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="firstplace-img">
+                            <div class="overlay">
+                                <div class="place-name">
+                                    <p>Varanasi</p>
+                                    <p>View Packages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-1">
+                        <div class="secondplace-img">
+                            <div class="overlay">
+                                <div class="place-name">
+                                    <p>Madhya Pradesh</p>
+                                    <p>View Packages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondplace-img">
+                            <div class="overlay">
+                                <div class="place-name">
+                                    <p>Jammu and Kashmir</p>
+                                    <p>View Packages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondplace-img">
+                            <div class="overlay">
+                                <div class="place-name">
+                                    <p>Karnataka</p>
+                                    <p>View Packages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="trading-international" data-aos="fade-up">
+        <div class="trading-international-inner">
+            <h2>Top Trending International Holiday Destinations</h2>
+            <div class="interphotos">
+                    <div class="interplaces1">
+                        <div class="overlay">
+                            <div class="place-name">
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interplaces1">
+                        <div class="overlay">
+                            <div class="place-name">
+                                <p>Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interplaces1">
+                        <div class="overlay">
+                            <div class="place-name">
+                                <p>Bhutan</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="interphotos">
+                    <div class="interplaces2">
+                        <div class="overlay">
+                            <div class="place-name">
+                                <p>Maldives</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interplaces2">
+                        <div class="overlay">
+                            <div class="place-name">
+                                <p>Sri Lanka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interplaces2">
+                        <div class="overlay">
+                            <div class="place-name">
+                                <p>Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="toppics-section" data-aos="fade-up">
+      <div class="toppics-section-inner">
+            <h2>Top Picks For You</h2>
+            <div class="cards-details">
+                <div class="cardlist">
+                    <img src="images/img_20231016000042_India-temples-tour.jpg" />
+                    <p>Taj Temples and Tigers India Tour</p>
+                    <div class="view-destails">
+                        <span>11 Days</span>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+                <div class="cardlist">
+                    <img src="images/img_20231016000508_south-india-tour.jpg" />
+                    <p>North India and South India Tour</p>
+                    <div class="view-destails">
+                        <span>12 Days</span>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+                <div class="cardlist">
+                    <img src="images/img_20231016000841_india-tiger-tour.jpg" />
+                    <p>Ultimate Tiger Safari Tour in India with Mumbai</p>
+                    <div class="view-destails">
+                        <span>10 Days</span>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+                <div class="cardlist">
+                    <img src="images/img_20231016001227_rajasthan-tour-packages.jpg" />
+                    <p>Rajasthan Tour with Agra and Varanasi</p>
+                    <div class="view-destails">
+                        <span>14 Days</span>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-seller-section" data-aos="fade-up">
+        <div class="best-seller-section-inner">
+            <h2>Our Best Seller</h2>
+           
+	            <div class="owl-carousel owl-theme">
+	                <div class="item">
+	                    <div class="card" style="background:linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(255,255,255,0)),  url('images/755_20231014084134_img_20231014203903_ranthambore-national-park-tour-packages.jpg'); background-size: cover;">
+	                        <div class="label">Starts USD 800</div>
+	                        <div class="famous-spots">
+	                            <h4>Golden Triangle with <br />Ranthambore</h4>
+	                            <span>9 Days/8 Nights</span>
+	                        </div>
+	                    </div>
+	                </div>
+					<div class="item">
+	                    <div class="card" style="background:linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(255,255,255,0)),  url('images/757_20231015115509_img_20231015235437_nepal-tour-packages.jpg'); background-size: cover;">
+	                        <div class="label">Starts USD 800</div>
+	                        <div class="famous-spots">
+	                            <h4>Golden Triangle with <br />Ranthambore</h4>
+	                            <span>9 Days/8 Nights</span>
+	                        </div>
+	                    </div>
+	                </div>
+					<div class="item">
+	                    <div class="card" style="background:linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(255,255,255,0)),  url('images/img_20231016000042_India-temples-tour.jpg'); background-size: cover;">
+	                        <div class="label">Starts USD 800</div>
+	                        <div class="famous-spots">
+	                            <h4>Golden Triangle with <br />Ranthambore</h4>
+	                            <span>9 Days/8 Nights</span>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="item">
+	                    <div class="card" style="background:linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(255,255,255,0)),  url('images/755_20231014084134_img_20231014203903_ranthambore-national-park-tour-packages.jpg'); background-size: cover;">
+	                        <div class="label">Starts USD 800</div>
+	                        <div class="famous-spots">
+	                            <h4>Golden Triangle with <br />Ranthambore</h4>
+	                            <span>9 Days/8 Nights</span>
+	                        </div>
+	                    </div>
+	                </div>
+					<div class="item">
+	                    <div class="card" style="background:linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(255,255,255,0)),  url('images/757_20231015115509_img_20231015235437_nepal-tour-packages.jpg'); background-size: cover;">
+	                        <div class="label">Starts USD 800</div>
+	                        <div class="famous-spots">
+	                            <h4>Golden Triangle with <br />Ranthambore</h4>
+	                            <span>9 Days/8 Nights</span>
+	                        </div>
+	                    </div>
+	                </div>
+					<div class="item">
+	                    <div class="card" style="background:linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(255,255,255,0)),  url('images/img_20231016000042_India-temples-tour.jpg'); background-size: cover;">
+	                        <div class="label">Starts USD 800</div>
+	                        <div class="famous-spots">
+	                            <h4>Golden Triangle with <br />Ranthambore</h4>
+	                            <span>9 Days/8 Nights</span>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+            
+        </div>
+    </section>
+
+    <section class="reviews-section" data-aos="fade-up">
+        <div class="reviews-section-inner">
+           <span>Check our reviews on</span><div class="review-img"><img src="images/trustpilot.svg" /></div>
+        </div>
+    </section>
+
+    <section class="blog-section" data-aos="fade-up">
+        <div class="blog-section-inner">
+            <h3>Check our latest blog posts!</h3>
+            <p>Our latest blog post. <strong>Read all articles</strong></p>
+
+            <div class="blog-card">
+                <div class="blogs">
+                    <img src="images/img_20231016230756_10-best-luxury-hotels-in-india.jpg" />
+                    <h2>10 Best Luxury Hotels in <br />India</h2>
+                    <p>In this post, we'll explore the 10 best luxury hotels in India that are sure to provide you with an unforgettable stay.</p>
+                </div>
+                <div class="blogs">
+                    <img src="images/img_20231016224056_10-best-golden-triangle-tour-packages.webp" />
+                    <h2>10 Best Golden Triangle <br />Tour Packages</h2>
+                    <p>One of the most popular tourist circuits "the Golden Triangle", covers three most vibrant cities in the India - Delhi, Agra, and Jaipur.</p>
+                </div>
+                <div class="blogs">
+                    <img src="images/img_20231016231103_top-5-national-parks-in-madhya-pradesh-for-tiger-sightings.webp" />
+                    <h2>Top 5 national parks in Madhya <br />Pradesh for tiger sightings</h2>
+                    <p>Madhya Pradesh is often referred to as the "Tiger State of India", thanks to its large and thriving population of tigers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" data-aos="fade-up">
+        <div class="faq-section-inner">
+            <h3>Frequently Asked Questions (FAQ's)</h3>
+            <div class="faq-box">
+                <h3 class="faq bgcolor-faq">Can I customize my India Holiday Package?
+                    <span class="down-angle"><i class="fa-solid fa-angle-up"></i></span>
+                </h3>
+               <div class="hidereply showreply">Yes sure, we can customize your India holiday package as per your interest and preferences. Just contact us and share your interest with us. contact us</div>
+            </div>
+             <div class="faq-box">
+                <h3 class="faq">What is the best time to visit India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">The best time to visit India depends on your interests and the region you want to visit. In general, the winter months (October to March) are the most popular time to visit, as the weather is mild and pleasant throughout the country. However, if you're planning to visit the Himalayas, the best time to go is during the spring (April to June) or fall (September to November), when the skies are clear and the wildflowers are in bloom.</div>
+            </div>
+            <div class="faq-box">
+                <h3 class="faq">What are the visa requirements for India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">Most foreign nationals require a visa to enter India. You can apply for an e-Visa online or a regular visa at an Indian embassy or consulate. The requirements for each type of visa vary, so it's important to check the latest information before you apply.</div>
+            </div>
+            <div class="faq-box">
+                <h3 class="faq">What is the currency of India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">The currency of India is the Indian rupee (INR). You can exchange your currency at banks, currency exchange bureaus, and hotels. It's a good idea to have some cash on hand, as not all places accept credit cards.</div>
+            </div>
+            <div class="faq-box">
+                <h3 class="faq">What are the major languages spoken in India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">Hindi is the official language of India, but there are over 20 other officially recognized languages spoken in the country. English is widely spoken in major cities and tourist areas.</div>
+            </div>
+            <div class="faq-box">
+                <h3 class="faq">What is the climate like in India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">India has a diverse climate, with tropical regions in the south and cold deserts in the north. The summer months (April to June) can be very hot, especially in the north. The winter months (October to March) are mild and pleasant, with the exception of the Himalayas, which can be very cold.</div>
+            </div>
+            <div class="faq-box">
+                <h3 class="faq">What is the food like in India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">Indian food is known for its rich flavors and spices. Some of the most popular Indian dishes include curry, biryani, naan bread, and tandoori chicken. India also has a wide variety of vegetarian and vegan options.</div>
+            </div>
+            <div class="faq-box">
+                <h3 class="faq">What are the cultural customs in India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">India is a very diverse country with a rich culture. It's important to be respectful of Indian customs and traditions. For example, it's considered rude to show your feet or shoulders in public. It's also important to dress modestly when visiting temples and other religious sites.</div>
+            </div>
+            <div class="faq-box">
+                <h3 class="faq">What are some of the must-see places in India?
+                    <span class="down-angle"><i class="fa-solid fa-angle-down"></i></span>
+                </h3>
+                <div class="hidereply">Some of the most popular tourist destinations in India include the Taj Mahal in Agra, the Golden Temple in Amritsar, the Hawa Mahal in Jaipur, and the beaches of Goa. However, India has much more to offer than just these popular tourist spots. There are also many hidden gems to be discovered, such as the backwaters of Kerala, the hill stations of Darjeeling and Munnar, and the ancient temples of Hampi. Please feel free to contact us for more details.</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="newsletter-section" data-aos="fade-up">
+        <div class="newsletter-section-inner">
+            <div class="news-letter-box">
+                <input type="text" class="inputsubscribe" placeholder="Subscribe to our Newsletter" />
+                <button class="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+    </section> 
+
+    <footer class="footer-section" data-aos="fade-up">
+        <div class="footer-section-inner">
+            <div class="footer-list-section">
+                <div class="footer-section-panel">
+                    <h2>Corporate Information</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Cancellation Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer-section-panel">
+                    <h2>Top Destinations</h2>
+                    <ul>
+                        <li>Rajasthan Tour Packages</li>
+                        <li>Kerala Tour Packages</li>
+                        <li>Ladakh Tour Packages</li>
+                        <li>Madhya Pradesh Tour Packages</li>
+                        <li>Karnataka Tour Packages</li>
+                        <li>Jammu and Kashmir Tour Packages</li>
+                        <li>Uttarakhand Tour Packages</li>
+                        <li>Gujarat Tour Packages</li>
+                        <li>Tamil Nadu Tour Packages</li>
+                        <li>Sikkim Tour Packages</li>
+                        <li>Jaipur Tour Packages</li>
+                        <li>Varanasi Tour Packages</li>
+                    </ul>
+                </div>
+                <div class="footer-section-panel">
+                    <h2>Trending Destinations</h2>
+                    <ul>
+                        <li>Kathmandu Tour Packages</li>
+                        <li>Paro Tour Packages</li>
+                        <li>Male Tour Packages</li>
+                        <li>Ranthambore Tour Packages</li>
+                        <li>Varanasi Tour Packages</li>
+                        <li>Khajuraho Tour Packages</li>
+                        <li>Alleppey Tour Packages</li>
+                        <li>Darjeeling Tour Packages</li>
+                        <li>Bandhavgarh Tour Packages</li>
+                        <li>Ooty Tour Packages</li>
+                        <li>Jaipur Tour Packages</li>
+                        <li>Leh Tour Packages</li>
+                    </ul>
+                </div>
+                <div class="footer-section-panel">
+                    <h2>Best Seller Tours</h2>
+                    <ul>
+                        <li>Golden Triangle with Varanasi</li>
+                        <li>Golden Triangle with Ranthambore</li>
+                        <li>North India and South India Tour</li>
+                        <li>North India Luxury Tour</li>
+                        <li>Leh Ladakh Escorted Tour</li>
+                        <li>Asiatic Lions with Bengal Tigers</li>
+                        <li>Ultimate Tiger Safari Tour in India with Mumbai</li>
+                        <li>Taj Temples and Tigers India Tour</li>
+                        <li>Golden Triangle and Kerala Tour</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-heading">
+            	<div class="accept">
+            		<span>We accept</span>
+            		<span class="iconimg"><img src="images/visa.svg" alt="" /></span>
+            		<span class="iconimg"><img src="images/american-express.svg" alt="" /></span>
+            		<span class="iconimg"><img src="images/paypal.svg" alt="" /></span>
+            		<span class="iconimg"><img src="images/mastercard.svg" alt="" /></span>
+            		<span class="iconimg"><img src="images/mastero.svg" alt="" /></span>
+            	</div>
+            	<p>© 2023 Gobooktours.com. All Right Reserved</p>
+            	<div class="followus">
+            		<span>Follow us</span>
+            		<span><i class="fa-brands fa-facebook-f"></i></span>
+            		<span><i class="fa-brands fa-instagram"></i></span>
+            		<span><i class="fa-brands fa-twitter"></i></span>
+            		<span><i class="fa-brands fa-pinterest"></i></span>
+            		<span><i class="fa-brands fa-youtube"></i></span>
+            	</div>
+
+        	</div>
+        </div>
+    </footer>   
+
+</body>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+</script>
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+ </script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init();
+
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    center:true,
+    margin:20,
+    responsiveClass:true,
+    mouseDrag:true,
+    touchDrag:true,
+    autoplayTimeout:2000,
+    smartSpeed:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true,
+    		dots:true,
+        },
+        600:{
+            items:2,
+            nav:false,
+    		dots:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+    		dots:false
+        }
+   	  }
+	})
+
+	let menu=document.querySelector('.menu')
+	let menuicon=document.querySelector('.menu-icon')
+	let menubar=document.querySelector('.menu-icon i')
+	let mobmenu=document.querySelectorAll('.mobmegamenu')
+	let dropicon=document.querySelectorAll('.items i')
+
+	menuicon.addEventListener('click',()=>{
+
+        if(menubar.className=='fa-solid fa-bars')
+        {
+            menu.style.left=0
+            menubar.classList.remove('fa-bars')
+            menubar.classList.add('fa-xmark')
+            menuicon.classList.add('closeIcon')
+
+        }
+        else{
+
+            menu.style.left='-100%'
+            menubar.classList.remove('fa-xmark')
+            menubar.classList.add('fa-bars')
+            menuicon.classList.remove('closeIcon')
+
+        }
+       
+
+    })
+
+    dropicon.forEach((element,i)=>{
+        element.addEventListener('click',()=>{
+           dropicon.forEach((el,ind)=>{
+                    if(ind!=i){
+                        mobmenu[ind].classList.remove('active') 
+                        dropicon[ind].classList.remove('fa-angle-up')
+                        dropicon[ind].classList.add('fa-angle-down')
+                    }
+            }) 
+           
+           if(dropicon[i].className=='fa-solid fa-angle-down'){
+                mobmenu[i].classList.add('active')
+                dropicon[i].classList.remove('fa-angle-down')
+                dropicon[i].classList.add('fa-angle-up')
+            }else{
+                mobmenu[i].classList.remove('active')
+                dropicon[i].classList.remove('fa-angle-up')
+                dropicon[i].classList.add('fa-angle-down')
+            }
+
+        })
+
+    })
+
+    let faqbox=document.querySelectorAll('.faq-box h3')
+        let hidereply=document.querySelectorAll('.hidereply')
+        let fontIcon=document.querySelectorAll('.down-angle i')
+        faqbox.forEach((element,i)=>{
+        element.addEventListener('click',()=>{
+                faqbox.forEach((el,ind)=>{
+                    if(ind!=i){
+                        hidereply[ind].classList.remove('showreply') 
+                        fontIcon[ind].classList.remove('fa-angle-up')
+                        fontIcon[ind].classList.add('fa-angle-down')
+                        faqbox[ind].classList.remove('bgcolor-faq')
+                    }
+                })
+                if(hidereply[i].className=='hidereply showreply'){
+                    element.classList.toggle('bgcolor-faq')
+                    hidereply[i].classList.toggle('showreply') 
+                    fontIcon[i].classList.remove('fa-angle-up')
+                    fontIcon[i].classList.add('fa-angle-down')
+                }else{
+                    element.classList.toggle('bgcolor-faq')
+                    fontIcon[i].classList.add('fa-angle-up')
+                    hidereply[i].classList.add('showreply')
+                }
+                
+            })
+        })
+
+        let header=document.querySelector("header");
+        console.log(header)
+        window.addEventListener("scroll",()=>{
+            let scrollHeight=window.scrollY; //
+            if(scrollHeight>=100){
+                header.classList.add('headerFixed')
+            }
+            else{
+                header.classList.remove('headerFixed')
+            }
+
+        })
+
+        let loader=document.querySelector(".loader");
+        let body=document.body;
+        window.addEventListener("load",()=>{
+            loader.style.display="none";
+            body.style.overflow="scroll";
+        })
+    
+    
+</script>
+</html>

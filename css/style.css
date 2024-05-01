@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        :root {
+            --primary: #5c1c4b;
+            --secondary: #7a2b63;
+            --fontColor: #706953;
+            --background: #efeeee;
+        }
+        body{
+            width: 100%;
+         
+            overflow: hidden;
+        }
+        .loader{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            z-index: 999999;
+            background-color: white;
+            position: fixed;
+        
+        }
+        header{
+            width:100%;
+            border-bottom: 1px solid #ccc;
+        }
+        .headerFixed{
+            position: fixed;
+            background-color: white;
+            box-shadow: 0px 2px 10px 0px #ccc;
+            z-index: 9999;
+        }
+        nav{
+            max-width:1170px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            padding: 15px;
+            position: relative;
+        }
+        .logo{
+            width:180px;
+        }
+        .logo img{
+            width:100%;
+        }
+        .mobilelogo{
+            display: none;
+        }
+        .mobilelogo img{
+            width:100%;
+        }
+        .menu-icon{
+            display:none;
+        }
+        .search-box{
+            width:400px;
+            display: flex;
+        }
+        .search-box>input{
+            width:320px;
+            height:40px;
+            border:1px solid #ccc;
+            background:#f5f6f7;;
+            padding: 0 10px;
+        }
+        .search-box>span{
+            background: var(--primary);
+            width:70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        .menu>ul{
+            display: flex;
+            list-style: none;
+        }
+        .menu>ul>li{
+            margin-right: 25px;
+            color:var(--primary);
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .menu>ul>li>i{
+            margin-left: 5px;
+            color:grey;
+            font-size: 10px;
+        }
+        .megamenu{
+            position: absolute;
+            border:1px solid var(--primary);
+            border-radius: 10px;
+            padding: 10px;
+            left:20%;
+            width:calc(100% - 250px);
+            top:90%;
+            visibility: hidden;
+            opacity: 0;
+            background: white;
+            z-index: 99;
+        }
+        .megamenu>h2{
+            font-size: 19px;
+            font-weight: 500;
+            padding:10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .all-country-list{
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+
+        }
+        .country-list>h3{
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 15px;
+        }
+        .country-list>h3:nth-child(3){
+            margin-top: 15px;
+        }
+        .country-list>ul{
+            list-style: none;
+        }
+        .country-list>ul>li{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .country-list:nth-child(3)>ul:nth-child(2),.country-list:nth-child(4)>ul:nth-child(2){
+            border-bottom:1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .menu>ul>li:nth-child(1):hover .megamenu{
+            visibility:visible;
+            opacity: 1;
+        }
+        .menu>ul>li:nth-child(2){
+            position: relative;
+        }
+        .dropdown{
+            position: absolute;
+            border:1px solid var(--primary);
+            top:180%;
+            left:-250%;
+            width:400px;
+            border-radius: 10px;
+            padding: 10px;
+            gap:20px;
+            display: none;
+            background: white;
+            z-index: 99;
+        }
+        .leftdropdown>ul{
+            list-style: none;
+        }
+        .leftdropdown>ul>li{
+            margin-top: 15px;
+            padding: 3px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu>ul>li:nth-child(2):hover .dropdown
+        {
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .mobdropitem,.items{
+            display: none;
+        }
+        .hero-section{
+            width:100%;
+        }
+        .hero-section-inner{
+            max-width: 1170px;
+            display: flex;
+            margin: auto;
+            padding: 30px 0;
+            gap:1%;
+           
+        }
+        .cover-photo1{
+            flex-basis: 68%;
+            background: url('../images/india-holidays.jpg') no-repeat center;
+            background-size: cover;
+            height:75vh;
+            border-radius: 20px;
+            position: relative;
+        }
+        ::placeholder{
+            font-size: 15px;
+            color:#4f4c4c;
+        }
+        .cover-photo2{
+            flex-basis:31%;
+            background: url('../images/india-nepal-bhutan-tour.jpg') no-repeat center;
+            background-size: cover;
+            height:75vh;
+            border-radius: 20px;
+        }
+
+        .overlay{
+            width:100%;
+            height:100%;
+            border-radius: 20px;
+            background:linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(255,255,255,0));
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+        }
+        .mid-box{
+            width:80%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .mid-box h1{
+            width:500px;
+            margin: auto;
+            color:white;
+            font-size: 38px;
+            text-align: center;
+            padding-bottom: 10px;
+            letter-spacing: 2px;
+
+        }
+        .mid-box input[type="text"]{
+            width:84%;
+            padding:15px 10px;
+            border:0;
+            outline: 0;
+        }
+        .mid-box span{
+            background-color: var(--primary);
+            padding: 13px 34px;
+            color: white;
+            font-weight: bolder;
+            font-size:20px;
+            position: relative;
+            left: -5px;
+            top: 2px;
+        }
+        .tour{
+            padding: 10px 15px;
+            margin-bottom: 20px
+        }
+        .tour-month{
+            background-color: #fff;
+            display: table;
+            padding: 5px 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .tour-india{
+            font-size: 25px;
+            color:#fff;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .experience{
+            color:#fff;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing:1px;
+            margin-bottom: 10px;
+        }
+
+        .travel-boxes{
+            width:100%
+        }
+        .travel-boxes-inner{
+            max-width: 1170px;
+            margin: auto;
+            display: flex;
+            gap:2%;
+        }
+        .travel-box{
+            display: flex;
+            flex-basis: 49%;
+            gap:3%;
+            border:1px solid #ccc;
+            padding: 30px 10px;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .travel-logo{
+            flex-basis:10%;
+        }
+        .travel-logo img{
+            width:100%
+        }
+        .travel-desc{
+            flex-basis: 80%;
+        }
+        .travel-desc>h3{
+            padding-bottom: 10px;
+        }
+        .travel-desc p{
+            color:#333131;
+            line-height: 25px;
+        }
+        .trading-section{
+            width:100%
+        }
+        .trading-section-inner{
+            max-width: 1170px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        .trading-section-inner>h2{
+            font-size: 38px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .places-gallery{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .leftplaces-gallery{
+            background: url("../images/rajasthan-tour-packages.jpg") center;
+            background-size: cover;
+            flex-basis: 24%;
+            height:76vh;
+            border-radius: 20px;
+        }
+        .rightplaces-gallery{
+            flex-basis: 78%;
+        }
+        .gallery-1{
+            display: flex;
+            justify-content: center;
+            gap:2%;
+            margin-bottom: 1%;
+        }
+        .gallery-1 .firstplace-img:nth-child(1){
+            background: url(../images/kerala-tour-packages.jpg) center;
+            background-size: cover;
+            flex-basis: 31%;
+            height:37vh;
+            border-radius: 20px;
+        }
+        .gallery-1 .firstplace-img:nth-child(2){
+            background: url(../images/sikkim-tour-packages.jpg) center;
+            background-size: cover;
+            flex-basis: 31%;
+            height:37vh;
+            border-radius: 20px;
+        }
+        .gallery-1 .firstplace-img:nth-child(3){
+            background: url(../images/varanasi-tour-packages.jpg) center;
+            background-size: cover;
+            flex-basis: 31%;
+            height:37vh;
+            border-radius: 20px;
+        }
+        .gallery-1 .secondplace-img:nth-child(1){
+            background: url(../images/khajuraho-tour-packages.jpg) center;
+            background-size: cover;
+            flex-basis: 31%;
+            height:37vh;
+            border-radius: 20px;
+        }
+        .gallery-1 .secondplace-img:nth-child(2){
+            background: url(../images/kashmir-tour-packages.jpg) center;
+            background-size: cover;
+            flex-basis: 31%;
+            height:37vh;
+            border-radius: 20px;
+        }
+        .gallery-1 .secondplace-img:nth-child(3){
+            background: url(../images/karnataka-tour-packages.jpg) center;
+            background-size: cover;
+            flex-basis: 31%;
+            height:37vh;
+            border-radius: 20px;
+        }
+        .place-name{
+            padding:15px;
+            margin-bottom: 20px;
+            line-height: 30px;
+        }
+        .place-name p:nth-child(1){
+            font-size: 23px;
+            font-weight: bold;
+            color:white;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .place-name p:nth-child(2){
+            color:white;
+        }
+        .trading-international{
+            width:100%
+        }
+        .trading-international-inner{
+            max-width: 1170px;
+            margin: auto;
+            padding: 30px 0;
+        }
+        .trading-international-inner>h2{
+            font-size: 38px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .interphotos{
+            display: flex;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            gap:2%;
+            margin-bottom: 20px;
+        }
+        .interplaces1:nth-child(1){
+            background: url("../images/india-tour-packages.jpg") center;
+            background-size: cover;
+            flex-basis: 32%;
+            height:200px;
+            border-radius:12px
+        }
+        .interplaces1:nth-child(2){
+            background: url("../images/nepal-tour-packages.jpg") center;
+            background-size: cover;
+            flex-basis: 32%;
+            height:200px;
+            border-radius:12px
+        }
+        .interplaces1:nth-child(3){
+            background: url("../images/bhutan-tour-packages.jpg") center;
+            background-size: cover;
+            flex-basis: 32%;
+            height:200px;
+            border-radius:12px
+        }
+
+        .interplaces2:nth-child(1){
+            background: url("../images/maldives-tour-packages.jpg") center;
+            background-size: cover;
+            flex-basis: 32%;
+            height:200px;
+            border-radius:12px
+        }
+        .interplaces2:nth-child(2){
+            background: url("../images/sri-lanka-tour-packages.jpg") center;
+            background-size: cover;
+            flex-basis: 32%;
+            height:200px;
+            border-radius:12px
+        }
+        .interplaces2:nth-child(3){
+            background: url("../images/thailand-tour-packages.jpg") center;
+            background-size: cover;
+            flex-basis: 32%;
+            height:200px;
+            border-radius:12px
+        }
+        .toppics-section{
+            width:100%;
+            background:var(--background) ;
+        }
+        .toppics-section-inner{
+            max-width: 1170px;
+            margin: auto;
+            padding: 30px 0;
+        }
+        .toppics-section-inner h2{
+            font-size: 38px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .cards-details{
+            width:100%;
+            display: flex;
+            gap:2%
+        }
+        .cardlist{
+            flex-basis: 23%;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .cardlist img{
+            width:100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .cardlist p{
+            padding: 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #ccc;
+        }
+        .view-destails{
+            width:100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding-bottom: 30px;
+            padding-top: 20px;
+        }
+        .viewBtn{
+            background: var(--primary);
+            color:white;
+            padding: 15px 25px;
+            outline: 0;
+            border: 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+
+        .best-seller-section{
+             width:100%;
+        }
+        .best-seller-section-inner{
+            max-width: 1170px;
+            margin: auto;
+            padding: 30px 0;
+        }
+        .best-seller-section-inner h2{
+            font-size: 38px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .card{
+            
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .card .label{
+            background: #198754;
+            color:white;
+            padding: 5px 10px;
+            display: table;
+            border-radius: 7px;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .famous-spots{
+            margin-top: 80px;
+        }
+        .famous-spots h4{
+            font-size: 25px;
+            font-weight: bold;
+            color:white
+        }
+        .famous-spots span{
+            color:#cacaca;
+            margin-top: 15px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .owl-prev,
+        .owl-next{
+            position: absolute;
+            top: 30%;
+        }
+        .owl-prev span,
+        .owl-next span{
+            border-radius: 50%;
+            font-size: 0px;
+            width:50px;
+            height:50px;
+            background: url(../images/back.png) ;
+            background-size: cover;
+            color: white;
+            display: block;
+            background-color: white;
+        }
+        .owl-next span{
+            transform: rotate(180deg);
+        }
+        .owl-prev{
+            left: -30px;
+            
+        }
+        .owl-next {
+            right: -30px;
+        }
+        
+        .para{
+            display: flex;
+            justify-content: center;
+        }
+
+        .reviews-section{
+            width:100%;
+            background-color: #878587;
+            color:white;
+            margin-top: 30px;
+        }
+        .reviews-section-inner{
+            max-width: 1170px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .reviews-section-inner span{
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .review-img{
+            width:150px;
+            margin-left: 10px;
+        }
+        .review-img img{
+            width:100%
+        }
+
+        .blog-section{
+            width:100%
+        }
+        .blog-section-inner{
+            max-width:1170px;
+            margin:auto;
+            padding: 50px 0;
+        }
+        .blog-section-inner h3{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .blog-section-inner>p{
+            margin-top: 10px;
+            color: var(--fontColor);
+            margin-bottom: 20px;
+        }
+        .blog-section-inner strong{
+            color:#000;
+            text-decoration: underline;
+        }
+        .blog-card{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .blogs{
+            flex-basis: 32%;
+            border:1px solid #ccc;
+            border-radius: 15px;
+        }
+        .blogs img{
+            width:100%;
+            border-radius: 15px 15px 0 0;
+        }
+        .blogs>h2{
+            padding: 15px 10px;
+            color:rgba(0, 0, 0,0.9)
+        }
+        .blogs>p{
+            padding: 15px 10px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            color:rgba(0, 0, 0,0.7)
+        }
+        .faq-section{
+            width:100%;
+        }
+        .faq-section-inner{
+            max-width: 1170px;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .faq-section-inner>h3{
+            font-size: 22px;
+            color:rgba(0, 0, 0,0.9);
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .faq-box{
+            border:1px solid #ccc;
+            margin-top: 10px;;
+            padding: 5px;
+        }
+        .faq{
+            color:rgba(0,0,0,0.8);
+            padding: 15px 10px;
+            position: relative;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        .bgcolor-faq{
+            background:  #5c1c4b;
+            color:white;
+            padding:15px 10px;
+            border-radius: 5px;
+            
+        }
+
+        .down-angle{
+            position: absolute;
+            right:15px;
+        }
+        .hidereply{
+            padding: 0px;
+            transition: 0.3s;
+            padding: 0 10px;
+            height: 0px;
+            transform-origin: top;
+            transform: scaleY(0);
+            color:rgba(0,0,0,0.7);
+        }
+        .showreply{
+            transform: scaleY(1); 
+            padding: 10px;
+            height: auto;
+        }
+        .newsletter-section{
+            width:100%;
+            border-top:1px solid #ccc;
+        }
+        .newsletter-section-inner{
+            max-width: 1170px;
+            margin: auto;
+        }
+        .news-letter-box{
+            width:100%;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+        .inputsubscribe{
+            padding: 15px 20px;
+            width:500px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+        }
+        .subscribeBtn{
+            background-color: #198754;
+            color:white;
+            font-size: 16px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            outline: 0;
+            border: 0;
+            margin-left: 20px;
+        }
+        .inputsubscribe::placeholder{
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .footer-section{
+            width:100%;
+            background-color: #000
+        }
+        .footer-section-inner{
+            max-width: 1170px;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .footer-list-section{
+            display: flex;
+            color:#fff;
+            width:100%;
+            justify-content: center;
+            gap:1%;
+            padding-bottom: 50px;
+        }
+        .footer-section-panel{
+            flex-basis: 24%;
+        }
+        .footer-section-panel>h2{
+            font-weight: 500;
+            padding-bottom: 20px;
+            font-size: 23px;
+        }
+        .footer-section-panel>ul{
+            list-style: none;
+        }
+        .footer-section-panel>ul>li{
+            line-height: 25px;
+        }
+        .footer-section-panel>ul>li:before{
+            content: '\f105';
+            font: normal normal normal 14px/1 FontAwesome;
+            margin-right: 8px;
+        }
+        .footer-heading{
+            width:100%;
+            text-align: center;
+            padding: 20px 0;
+            color:white;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accept{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .iconimg{
+            position: relative;
+            top:2px;
+            margin-left: 7px;
+            width:40px;
+            height:40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: 0.5s
+        }
+        .iconimg:hover{
+            background: white;
+        }
+        .iconimg img{
+            width:100%;
+        }
+        .followus{
+            display: flex;
+            align-items: center;
+            font-size: px;
+        }
+        .followus span{
+            margin-left:7px;
+        }
